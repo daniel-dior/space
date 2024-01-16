@@ -1,0 +1,277 @@
+body {
+    background-image: url(background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Barlow,sans-serif;
+    font-size: .9375rem;
+
+}
+.java {
+    display: none;
+}
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    /* background-color: rgba(97, 96, 96, 0.26); */
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    transition: 0.1s;
+}
+.overlay-content {
+    position: relative;
+    top: 0;
+    text-align: left;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.overlay:hover {
+    color: aqua;
+}
+.close {
+ color: white; 
+ font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+.close:hover {
+    color: aqua;
+}
+.overlay a {
+    padding: 8px;
+    scroll-padding-top: -20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    padding-left: 40px;
+
+}
+.overlay a:hover {
+    color: aqua;
+    width: 85%;
+    border-right: 5px solid rgb(177, 176, 176);
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}
+.open a {
+    color: white;
+    text-decoration: none;
+}
+.open a:hover, a:active {
+    color: aqua;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.logo {
+    margin-left: 100px;
+    margin-right: 200px;
+    
+}
+.line {
+    border-bottom: 1px solid white;
+    width: 700px;  
+    z-index: 100;
+}
+.nav a {
+    padding-bottom: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+} 
+.emma a {
+    border-bottom: 3px solid white;
+
+}
+.nav a:hover {
+    border-bottom: 3px solid rgb(160, 157, 157);
+
+}
+.sam a {
+    border-right: 3px solid white;
+    color: aqua;
+    border-bottom: none;
+}
+.nav {
+    display: flex;
+    /* background-image: linear-gradient( rgb(19, 21, 34) , rgb(73, 87, 113), rgb(21, 37, 71)); */
+    padding: 10px 50px;
+    height: 70PX;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    backdrop-filter: blur(20px);
+
+    /* opacity: 0.7; */
+}
+.nav b {
+    font-size: 20px;
+} 
+.body1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+.img h2 {
+    color: white;
+}
+.img img {
+    width: 100%;
+}
+.img b {
+    opacity: 0.5;
+    padding-right: 30px;
+}
+.word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+}
+
+.word p{
+    color: rgb(177, 173, 173);
+
+}
+h2 {
+    margin-bottom: 70px;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.div {
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.link a{
+    color: white;
+    text-decoration: none; 
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+.link a:hover {
+    border-bottom: 4px solid rgb(73, 73, 73);
+    /* backdrop-filter: blur(20px); */
+}
+.word h1 {
+    color: white;
+    font-size: 100px;
+    margin-top: -0px;
+    font-weight: 100;
+}
+.dan {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.dan h2 {
+    color: white;
+}
+a:focus {
+    border-bottom: 5px solid white;
+}
+.daniel {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+    display: none;
+}
+.daniel:nth-child(2)   {
+    display: block;   
+    display: flex;
+}
+button {
+    background-color:none;
+    background: none;
+    border: none;
+    backdrop-filter: blur(20px);
+    /* overflow: hidden; */
+}
+@media screen and (max-width:900px) {
+    .line {
+        display: none;
+    }
+    .nav {
+        gap: 20px;
+    }
+    .body1 {
+        flex-direction: column;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .daniel {
+        gap: 50px;
+        padding: 70px 50px;
+    }
+}
+@media screen and (max-width:500px) {
+    .java {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .navbar {
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    .logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .word h1 {
+        font-size: 100px;
+        margin-bottom: 100px;
+    }
+    .daniel {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .link {
+        gap: 3px;
+        justify-content: center;
+    }
+    .daniel img {
+        width: 100%;
+    }
+    br {
+        display: none;
+    }
+    .word h1 {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+}
